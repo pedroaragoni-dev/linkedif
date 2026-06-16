@@ -1,0 +1,189 @@
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+#page-header nav {
+    /* Afasta o menu um pouco da borda direita */
+    margin-right: 10px;
+}
+
+#page-header a {
+    color: #0A66C2;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 14px;
+}
+
+#page-header a:hover {
+    color: #004182;
+}
+
+
+/* ============================= */
+/* PÁGINA DE CONTATO */
+/* ============================= */
+
+#pagina-contato {
+    /* Ocupa o espaço livre e ajuda o footer a ficar no final */
+    flex: 1;
+
+    max-width: 900px;
+    width: 100%;
+
+    margin: 110px auto 40px;
+    padding: 0 20px;
+
+    /* Centraliza o formulário na página */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ============================= */
+/* FORMULÁRIO */
+/* ============================= */
+
+#formulario {
+    width: 100%;
+    max-width: 520px;
+
+    background-color: white;
+    padding: 35px;
+
+    border-radius: 18px;
+    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.08);
+}
+
+#formulario h1 {
+    color: #0A66C2;
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+#formulario > p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 700;
+    color: #222;
+}
+
+input,
+textarea {
+    width: 100%;
+
+    padding: 13px;
+    margin-bottom: 18px;
+
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-size: 1rem;
+
+    outline: none;
+}
+
+/* Destaca o campo quando ele está selecionado */
+input:focus,
+textarea:focus {
+    border-color: #0A66C2;
+    box-shadow: 0 0 0 3px #E8F3FF;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+
+/* ============================= */
+/* BOTÃO */
+/* ============================= */
+
+button {
+    padding: 13px;
+
+    background-color: #0A66C2;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    font-weight: 700;
+    font-size: 1rem;
+
+    transition: 0.2s;
+}
+
+button:hover {
+    background-color: #004182;
+}
+
+
+/* ============================= */
+/* REDES SOCIAIS */
+/* ============================= */
+
+#redes-contato {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+
+    margin-top: 25px;
+}
+
+#redes-contato a {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #E8F3FF;
+    color: #0A66C2;
+
+    text-decoration: none;
+    font-size: 1.3rem;
+
+    transition: 0.2s;
+}
+
+#redes-contato a:hover {
+    background-color: #0A66C2;
+    color: white;
+}
+
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media (max-width: 600px) {
+    #pagina-contato {
+        margin-top: 95px;
+        padding: 0 15px;
+    }
+
+    #formulario {
+        padding: 25px;
+    }
+
+    #formulario h1 {
+        font-size: 1.8rem;
+    }
+}

@@ -1,0 +1,418 @@
+/* ============================= */
+/* RESET E CONFIGURAÇÕES GERAIS */
+/* ============================= */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.source-sans-3-linkedif {
+    font-family: "Source Sans 3", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+}
+
+html,
+body {
+    min-height: 100vh;
+    background-color: rgb(243, 242, 239);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+#header-container {
+    width: 100%;
+    background-color: white;
+
+    border-bottom: 1px solid rgb(220, 220, 220);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#page-header {
+    padding: 0 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#page-header nav {
+    margin-right: 50px;
+}
+
+#page-header ul {
+    width: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    list-style: none;
+
+    margin: 10px;
+    gap: 20px;
+}
+
+#page-header img {
+    height: 35px;
+    margin-top: 5px;
+}
+
+#page-header svg {
+    height: 30px;
+    margin-top: 5px;
+
+    color: #0a66c2;
+}
+
+#page-header svg:hover {
+    color: #0f3a66;
+}
+
+
+/* ============================= */
+/* LAYOUT PRINCIPAL */
+/* ============================= */
+
+main {
+    max-width: 1200px;
+
+    margin: auto;
+    margin-top: 70px;
+
+    padding: 20px;
+
+    flex: 1;
+
+    display: flex;
+    gap: 20px;
+}
+
+#lateral {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============================= */
+/* CARDS */
+/* ============================= */
+
+.cards-principal,
+.cards-lateral {
+    background-color: white;
+
+    border-radius: 12px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+
+    margin-bottom: 10px;
+}
+
+.cards-principal {
+    padding: 20px;
+}
+
+.cards-lateral {
+    padding: 20px 30px;
+}
+
+
+/* ============================= */
+/* TÍTULOS DOS CARDS */
+/* ============================= */
+
+.cards-principal h2,
+.cards-lateral h2 {
+    color: #0d2ed5;
+}
+
+.cards-principal h2 {
+    font-size: 19px;
+
+    border-bottom: 2px solid rgba(43, 0, 255, 0.07);
+
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.cards-lateral h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+/* ============================= */
+/* CONTEÚDO DOS CARDS */
+/* ============================= */
+
+.cards-principal p {
+    font-size: 15px;
+    font-weight: 380;
+    line-height: 23px;
+
+    margin-top: 20px;
+}
+
+.cards-principal i {
+    margin-right: 12px;
+}
+
+
+/* ============================= */
+/* IDENTIFICAÇÃO */
+/* ============================= */
+
+#identificacao {
+    background-color: white;
+
+    border-radius: 12px;
+    overflow: hidden;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+#capa {
+    height: 120px;
+    background: linear-gradient(to right, #0a66c2, #0e365f);
+}
+
+#identificacao img {
+    width: 130px;
+    height: 130px;
+
+    border-radius: 50%;
+
+    margin-top: -85px;
+
+    border: 3px solid white;
+}
+
+#identificacao h1 {
+    font-size: 30px;
+
+    margin-top: 3px;
+
+    border-bottom: 3px solid #0e1d66;
+
+    display: inline-block;
+}
+
+#identificacao p {
+    padding: 20px;
+
+    color: black;
+
+    font-size: 14px;
+    font-weight: 350;
+}
+
+
+/* ============================= */
+/* CONTATO */
+/* ============================= */
+
+#contato h2 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+#contato ul {
+    list-style: none;
+}
+
+#contato li {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 8px;
+
+    font-size: 14px;
+}
+
+#contato i {
+    font-size: large;
+}
+
+
+/* ============================= */
+/* COMPETÊNCIAS */
+/* ============================= */
+
+#competencias {
+    flex: 1;
+}
+
+#competencias h2 {
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.skills {
+    color: #3a60a6;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    margin-top: 20px;
+}
+
+.skills i {
+    margin-right: 10px;
+}
+
+#competencias ul {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+#competencias li {
+    font-size: 16px;
+}
+
+
+/* ============================= */
+/* FORMAÇÃO */
+/* ============================= */
+
+#formacao dl dt {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#formacao .conclusao {
+    display: inline;
+
+    background-color: rgb(137, 180, 249);
+    color: white;
+
+    padding: 3px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#formacao .instituicao {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    margin-top: 2px;
+
+    font-weight: 400;
+}
+
+#formacao .instituicao img {
+    width: 24px;
+
+    margin: 5px;
+
+    border-radius: 3px;
+}
+
+
+/* ============================= */
+/* EXPERIÊNCIA */
+/* ============================= */
+
+#experiencia dl dt {
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+#experiencia dl dd {
+    display: inline;
+
+    background-color: rgb(137, 180, 249);
+    color: white;
+
+    padding: 3px;
+
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#experiencia ul {
+    margin-top: 10px;
+}
+
+#experiencia ul li {
+    margin-left: 30px;
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer {
+    background-color: #0d2ed5;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 5px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+
+/* ============================= */
+/* RESPONSIVIDADE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+    main {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    #lateral,
+    #principal {
+        max-width: 500px;
+    }
+
+    #page-header {
+        padding: 0 16px;
+    }
+
+    #page-header img {
+        height: 40px;
+    }
+
+    #page-header svg {
+        width: 26px;
+        height: 26px;
+    }
+
+}

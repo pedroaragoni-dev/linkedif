@@ -1,0 +1,101 @@
+/* Reset básico para remover espaçamentos padrões */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Afasta os ícones do canto direito do header */
+#page-header nav {
+    margin-right: 50px;
+}
+
+/* Estilização dos links do menu */
+#page-header a {
+    color: #0A66C2;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+/* Muda a cor quando o mouse passa sobre o link */
+#page-header a:hover {
+    color: #004182;
+}
+
+/* Organiza o conteúdo principal em coluna */
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Título principal da página */
+h1 {
+    color: #004182;
+}
+
+/* Card que envolve os conteúdos da página */
+.cards {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+/* Títulos das seções dentro dos cards */
+.cards h2 {
+    color: #0A66C2;
+    margin-bottom: 10px;
+}
+
+/* Ajusta o espaçamento entre as linhas dos parágrafos */
+.cards p {
+    line-height: 25px;
+}
+
+/* ========================= */
+/* ESTILIZAÇÃO DAS TABELAS   */
+/* ========================= */
+
+/* Espaçamento geral das tabelas */
+.tabelas {
+    margin: 20px;
+}
+
+/* Centraliza o título de cada semestre */
+.tabelas h3 {
+    text-align: center;
+}
+
+/* Configuração geral da tabela */
+.tabelas table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    background-color: white;
+}
+
+/* Cabeçalho da tabela */
+.tabelas th {
+    background-color: #0A66C2;
+    color: white;
+    padding: 12px;
+    text-align: left;
+}
+
+/* Células da tabela */
+.tabelas td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Linha de total da tabela */
+.tabelas tfoot {
+    font-weight: bold;
+    background-color: #f0f5ff;
+}
+
+/* Destaca a parte superior do total */
+.tabelas tfoot td {
+    border-top: 2px solid #0A66C2;
+}
