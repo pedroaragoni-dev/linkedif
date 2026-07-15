@@ -32,7 +32,7 @@ Além disso, a aplicação possui uma área dedicada ao perfil do estudante, reu
 ## 🛠️ Tecnologias utilizadas
 
 <p>
-<img src="https://skillicons.dev/icons?i=html,css,js"/>
+<img src="https://skillicons.dev/icons?i=html,css"/>
 </p>
 
 ---
